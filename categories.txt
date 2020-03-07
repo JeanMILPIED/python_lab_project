@@ -1,0 +1,8 @@
+0:pant
+1:skirt
+2:dress
+3:shoes
+4:hat
+5:coat
+6:shirt
+7:pull
