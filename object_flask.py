@@ -68,6 +68,10 @@ def get_features_from_json(myjson):
         mystr += "No clothe in picture...\n"
     return mystr
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return "<h1>404</h1><p>The resource could not be found.</p>", 404
+
 if __name__ == "__main__":
 # run the app locally on the given port
     app.run(host='0.0.0.0', port=5000) #to run on the back end
