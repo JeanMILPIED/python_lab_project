@@ -14,15 +14,15 @@ CORS(app)
 # Path to the saved object detection model
 sys.path.append(os.path.abspath("./cnn-mnist"))
 #Initialize some global variables
-global model
-model = load_model('./cnn-mnist')
+global detect_object
+detect_object = load_function(detect_object.py)
 
 @app.route('/')
 def index():
     return render_template("index.html")
 
 def convertImage(image_proper):
-  #if needed to make the image in the same file we are detecting from
+  #if needed to make the image in the same file we are detecting from named output.png
   return output.png
 
 def loadImage(filename):
